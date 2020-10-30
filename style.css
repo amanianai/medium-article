@@ -1,0 +1,110 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  position: relative; /* needed if you position the pseudo-element absolutely */
+}
+
+.header {
+  height: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 100px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.subtitle {
+  font-family: 'Oswald', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.bg-image {
+  background-size: cover;
+  background-image: url("https://source.unsplash.com/random");
+  height: 600px;
+}
+
+.container {
+  width: 680px;
+  margin: 0 auto;
+}
+
+section, article {
+  padding: 75px 0;
+}
+
+
+
+.bg-light {
+  color: #fff !important;
+}
+
+.overlay {
+  content: "";
+  display: block;
+  position: absolute; /* could also be absolute */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.header-content {
+  position: relative;
+  z-index: 10;
+}
+
+p {
+  font-family: 'Lora';
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(41, 41, 41, 1);
+}
+
+article h1 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+article h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #aaa;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+img.author {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+
+}
+
+.article-info {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 10px;
+}
+
+.article-info p {
+  font-size: 18px;
+  margin: 0;
+  display: block;
+}
+
+.article-header {
+  font-size: 18px;
+  margin: 0;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
